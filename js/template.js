@@ -1,11 +1,8 @@
 (function($){
 	$(document).ready(function(){
-	
-		//$(".banner-image").backstretch('images/banner.jpg');
-		$(".banner-image").backstretch('images/header1500x500.jpg');
+
+		$(".banner-image").backstretch('/images/header1500x500.jpg');
 		
-		// Fixed header
-		//-----------------------------------------------
 		$(window).scroll(function() {
 			if (($(".header.fixed").length > 0)) { 
 				if(($(this).scrollTop() > 0) && ($(window).width() > 767)) {
